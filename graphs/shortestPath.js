@@ -6,7 +6,7 @@ function shortestPath(graph, source, target) {
   let queue = [];
   queue.push(source);
   while (!queue.length) {
-    let current = queue.unshift();
+    let current = queue.shift();
     if (current.value === target.value) {
       return paths[current.value].length;
     }
