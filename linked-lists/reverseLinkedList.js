@@ -11,7 +11,6 @@
  * @return {ListNode}
  */
 
-//just change the direction of the list
 let reverseList = function(head) {
   let previous = null;
   let current = head;

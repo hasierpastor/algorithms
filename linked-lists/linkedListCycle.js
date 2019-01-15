@@ -18,6 +18,7 @@
  * @param {ListNode} head
  * @return {boolean}
  */
+
 let hasCycle = function(head) {
   if (!head) return false;
   let current = head;

@@ -33,6 +33,5 @@ let isUnivalTree = function(root) {
     }
   }
   dfs(root);
-  console.log(unique);
   return unique.size === 1;
 };
