@@ -22,14 +22,6 @@
  * @return {number[]}
  */
 
-// var anagramMappings = function(A, B) {
-//     let P = []
-//     for (let i=0; i<A.length; i++){
-//         P.push(B.indexOf(A[i]))
-//     }
-//     return P
-// };
-
 let anagramMappings = function(A, B) {
   let P = [];
   let hashTable = createHashTable(B);
