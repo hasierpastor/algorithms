@@ -9,7 +9,7 @@
  * @return {ListNode}
  */
 
-let getIntersectionNode = function(headA, headB) {
+function getIntersectionNode(headA, headB) {
   let currentA = headA;
   let currentB = headB;
   let lengthA = 0;
@@ -46,4 +46,4 @@ let getIntersectionNode = function(headA, headB) {
     pointerB = pointerB.next;
   }
   return pointerA;
-};
+}
