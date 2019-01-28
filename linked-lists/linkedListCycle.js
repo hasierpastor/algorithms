@@ -19,7 +19,7 @@
  * @return {boolean}
  */
 
-let hasCycle = function(head) {
+function hasCycle(head) {
   if (!head) return false;
   let current = head;
   let seen = new Set();
@@ -32,4 +32,4 @@ let hasCycle = function(head) {
     current = current.next;
   }
   return false;
-};
+}
