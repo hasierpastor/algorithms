@@ -17,7 +17,7 @@ function ListNode(val) {
 // @param {number} x
 // @return {ListNode}
 
-let partition = function(head, x) {
+function partition(head, x) {
   if (!head) return null;
   let least = new ListNode(null);
   let less = new ListNode(null);
@@ -57,4 +57,4 @@ let partition = function(head, x) {
   less.next = greatest;
 
   return least;
-};
+}
