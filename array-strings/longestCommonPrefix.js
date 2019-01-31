@@ -15,6 +15,11 @@
 
 // All given inputs are in lowercase letters a-z.
 
+/**
+ * @param {string[]} strs
+ * @return {string}
+ */
+
 function longestCommonPrefix(strs) {
   if (strs.length === 0) return '';
   let prefix = strs[0];
