@@ -20,7 +20,7 @@ function ListNode(val) {
  * @return {boolean}
  */
 
-var isPalindrome = function(head) {
+function isPalindrome(head) {
   let reverse = reverseCloneLL(head);
   let pointer1 = head;
   let pointer2 = reverse;
@@ -32,7 +32,7 @@ var isPalindrome = function(head) {
     pointer2 = pointer2.next;
   }
   return true;
-};
+}
 
 function reverseCloneLL(node) {
   let reversedList = null;
