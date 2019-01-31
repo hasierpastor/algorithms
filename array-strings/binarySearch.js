@@ -17,7 +17,7 @@
  * @param {number} target
  * @return {number}
  */
-let search = function(arr, val) {
+function binarySearch(arr, val) {
   let leftIdx = 0;
   let rightIdx = arr.length - 1;
 
@@ -40,4 +40,4 @@ let search = function(arr, val) {
 
   // lef and right pointers crossed, val isn't in arr
   return -1;
-};
+}

@@ -14,7 +14,7 @@
  * @return {number}
  */
 
-let firstUniqChar = function(s) {
+function firstUniqChar(s) {
   let charObj = {};
   for (let i = 0; i < s.length; i++) {
     if (s[i] in charObj) {
@@ -29,4 +29,4 @@ let firstUniqChar = function(s) {
     }
   }
   return -1;
-};
+}

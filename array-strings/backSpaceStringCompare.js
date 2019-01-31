@@ -32,7 +32,7 @@
  * @return {boolean}
  */
 
-let backspaceCompare = function(S, T) {
+function backspaceCompare(S, T) {
   let sStack = [];
   let tStack = [];
   for (let i = 0; i < S.length; i++) {
@@ -57,4 +57,4 @@ let backspaceCompare = function(S, T) {
     if (sStack[i] !== tStack[i]) return false;
   }
   return true;
-};
+}

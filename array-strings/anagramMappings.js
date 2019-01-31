@@ -22,7 +22,7 @@
  * @return {number[]}
  */
 
-let anagramMappings = function(A, B) {
+function anagramMappings(A, B) {
   let P = [];
   let hashTable = createHashTable(B);
   for (let i = 0; i < A.length; i++) {
@@ -30,7 +30,7 @@ let anagramMappings = function(A, B) {
     P.push(index);
   }
   return P;
-};
+}
 
 function createHashTable(arr) {
   let hash = {};

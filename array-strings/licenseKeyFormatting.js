@@ -24,7 +24,7 @@
  * @return {string}
  */
 
-let licenseKeyFormatting = function(S, K) {
+function licenseKeyFormatting(S, K) {
   let newArr = [];
   let dash = 0;
   for (let i = S.length - 1; i >= 0; i--) {
@@ -39,4 +39,4 @@ let licenseKeyFormatting = function(S, K) {
     dash++;
   }
   return newArr.reverse().join('');
-};
+}

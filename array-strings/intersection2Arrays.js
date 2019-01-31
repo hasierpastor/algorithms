@@ -15,7 +15,7 @@
  * @return {number[]}
  */
 
-let intersection = function(nums1, nums2) {
+function intersection(nums1, nums2) {
   let intersect = [];
   let maxLength = nums1.length > nums2.length ? nums1.length : nums2.length;
   let freqCounter1 = createFreqCounter(nums1);
@@ -26,7 +26,7 @@ let intersection = function(nums1, nums2) {
     }
   }
   return intersect;
-};
+}
 
 function createFreqCounter(arr) {
   let obj = {};

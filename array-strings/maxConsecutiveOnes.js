@@ -11,7 +11,7 @@
  * @return {number}
  */
 
-let findMaxConsecutiveOnes = function(nums) {
+function findMaxConsecutiveOnes(nums) {
   let maxOnes = 0;
   let count = 0;
 
@@ -24,4 +24,4 @@ let findMaxConsecutiveOnes = function(nums) {
     maxOnes = Math.max(maxOnes, count);
   }
   return maxOnes;
-};
+}

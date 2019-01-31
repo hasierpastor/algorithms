@@ -21,7 +21,7 @@
  * @return {number}
  */
 
-let numJewelsInStones = function(J, S) {
+function numJewelsInStones(J, S) {
   let jewelMapper = createJewelObj(J);
   let count = 0;
   for (let i = 0; i < S.length; i++) {
@@ -30,7 +30,7 @@ let numJewelsInStones = function(J, S) {
     }
   }
   return count;
-};
+}
 
 function createJewelObj(str) {
   let obj = {};

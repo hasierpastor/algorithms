@@ -11,7 +11,7 @@
  * @return {number}
  */
 
-var maxSubArray = function(nums) {
+function maxSubArray(nums) {
   let maxSum = nums[0];
   let currSum = 0;
 
@@ -25,4 +25,4 @@ var maxSubArray = function(nums) {
     }
   }
   return maxSum;
-};
+}

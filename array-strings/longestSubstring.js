@@ -17,7 +17,7 @@
 // Explanation: The answer is "wke", with the length of 3.
 // Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 
-let lengthOfLongestSubstring = function(string) {
+function lengthOfLongestSubstring(string) {
   if (string.length <= 1) return string.length;
   let unique = new Set();
   let left = 0;
@@ -37,4 +37,4 @@ let lengthOfLongestSubstring = function(string) {
   }
 
   return max;
-};
+}
