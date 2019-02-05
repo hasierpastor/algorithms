@@ -25,7 +25,7 @@
  * @return {number}
  */
 
-let searchInsert = function(nums, target) {
+function searchInsert(nums, target) {
   if (target < nums[0]) {
     return 0;
   } else if (target > nums[nums.length - 1]) {
@@ -39,4 +39,4 @@ let searchInsert = function(nums, target) {
       }
     }
   }
-};
+}

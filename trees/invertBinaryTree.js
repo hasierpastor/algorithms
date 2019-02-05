@@ -30,11 +30,11 @@
  * @return {TreeNode}
  */
 
-let invertTree = function(root) {
+function invertTree(root) {
   if (!root) return null;
   if (root === null) return;
   [root.left, root.right] = [root.right, root.left];
   invertTree(root.right);
   invertTree(root.left);
   return root;
-};
+}

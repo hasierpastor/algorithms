@@ -40,14 +40,14 @@
  * @return {boolean}
  */
 
-let isBalanced = function(root) {
+function isBalanced(root) {
   if (root === null) return true;
   let heightDiff = getHeight(root.left) - getHeight(root.right);
   if (Math.abs(heightDiff) > 1) {
     return false;
   }
   return isBalanced(root.left) && isBalanced(root.right);
-};
+}
 
 function getHeight(root) {
   if (root === null) return 0;

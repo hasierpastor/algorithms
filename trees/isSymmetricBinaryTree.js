@@ -26,9 +26,9 @@
  * @return {boolean}
  */
 
-let isSymmetric = function(root) {
+function isSymmetric(root) {
   return isSymmetricHelper(root, root);
-};
+}
 
 function isSymmetricHelper(t1, t2) {
   if (t1 == null && t2 == null) {

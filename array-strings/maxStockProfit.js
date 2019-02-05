@@ -21,7 +21,7 @@
  * @return {number}
  */
 
-let maxProfit = function(prices) {
+function maxProfit(prices) {
   let profit = 0;
   let low = Infinity;
   for (let i = 0; i < prices.length - 1; i++) {
@@ -30,4 +30,4 @@ let maxProfit = function(prices) {
   }
 
   return profit;
-};
+}

@@ -16,7 +16,7 @@ function ListNode(val) {
  * @return {ListNode}
  */
 
-var mergeTwoLists = function(l1, l2) {
+function mergeTwoLists(l1, l2) {
   let node = new ListNode(-1);
   let previous = node;
   while (l1 !== null && l2 !== null) {
@@ -32,4 +32,4 @@ var mergeTwoLists = function(l1, l2) {
   previous.next = l1 === null ? l2 : l1;
 
   return node.next;
-};
+}

@@ -14,13 +14,13 @@
  * @return {number}
  */
 
-let singleNumber = function(nums) {
+function singleNumber(nums) {
   let freqCounter = createFreqCounter(nums);
   for (let i = 0; i < nums.length; i++) {
     if (freqCounter[nums[i]] === 1) return nums[i];
   }
   return false;
-};
+}
 
 function createFreqCounter(arr) {
   let obj = {};

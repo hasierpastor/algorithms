@@ -15,7 +15,7 @@
  * @return {number[]}
  */
 
-let twoSum = function(nums, target) {
+function twoSum(nums, target) {
   let map = createIdxObj(nums);
   for (let i = 0; i < nums.length; i++) {
     let complement = target - nums[i];
@@ -24,7 +24,7 @@ let twoSum = function(nums, target) {
     }
   }
   return false;
-};
+}
 
 function createIdxObj(arr) {
   let obj = {};

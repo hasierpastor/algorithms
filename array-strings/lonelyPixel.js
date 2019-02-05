@@ -18,7 +18,7 @@
  * @return {number}
  */
 
-let findLonelyPixel = function(picture) {
+function findLonelyPixel(picture) {
   let lonely = 0;
   let row = Array(picture[0].length).fill(0);
   let column = Array(picture.length).fill(0);
@@ -41,4 +41,4 @@ let findLonelyPixel = function(picture) {
     }
   }
   return lonely;
-};
+}

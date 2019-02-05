@@ -22,7 +22,7 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 
-let rotate = function(nums, k) {
+function rotate(nums, k) {
   let newArr = new Array(nums.length);
   for (let i = 0; i < nums.length; i++) {
     newArr[(i + k) % nums.length] = nums[i];
@@ -30,4 +30,4 @@ let rotate = function(nums, k) {
   for (let i = 0; i < nums.length; i++) {
     nums[i] = newArr[i];
   }
-};
+}

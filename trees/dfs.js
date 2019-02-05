@@ -10,29 +10,28 @@
  * @return {number[]}
  */
 
-let inorderTraversal = function(root, nodes = []) {
+function inorderTraversal(root, nodes = []) {
   if (root !== null) {
     inorderTraversal(root.left, nodes);
     nodes.push(root.val);
     inorderTraversal(root.right, nodes);
   }
   return nodes;
-};
+}
 
-let preorderTraversal = function(root, nodes = []) {
+function preorderTraversal(root, nodes = []) {
   if (root !== null) {
     nodes.push(root.val);
     preorderTraversal(root.left, nodes);
     preorderTraversal(root.right, nodes);
   }
   return nodes;
-};
-
-let postorderTraversal = function(root, nodes = []) {
+}
+function postorderTraversal(root, nodes = []) {
   if (root !== null) {
     postorderTraversal(root.left, nodes);
     postorderTraversal(root.right, nodes);
     nodes.push(root.val);
   }
   return nodes;
-};
+}

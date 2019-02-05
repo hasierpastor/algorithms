@@ -17,7 +17,7 @@
  * @return {ListNode}
  */
 
-let removeElements = function(head, val) {
+function removeElements(head, val) {
   let ll = head;
   if (head.val == val) {
     return head.next;
@@ -30,4 +30,4 @@ let removeElements = function(head, val) {
     ll = ll.next;
   }
   return head;
-};
+}

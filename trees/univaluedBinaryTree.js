@@ -23,7 +23,7 @@
  * @return {boolean}
  */
 
-let isUnivalTree = function(root) {
+function isUnivalTree(root) {
   let unique = new Set();
   function dfs(node) {
     if (node !== null) {
@@ -34,4 +34,4 @@ let isUnivalTree = function(root) {
   }
   dfs(root);
   return unique.size === 1;
-};
+}

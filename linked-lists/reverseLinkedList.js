@@ -11,7 +11,7 @@
  * @return {ListNode}
  */
 
-let reverseList = function(head) {
+function reverseList(head) {
   let previous = null;
   let current = head;
   while (current !== null) {
@@ -21,4 +21,4 @@ let reverseList = function(head) {
     current = temp;
   }
   return previous;
-};
+}

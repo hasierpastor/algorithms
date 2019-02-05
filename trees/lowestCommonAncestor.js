@@ -13,7 +13,7 @@
 // Output: 5
 // Explanation: The LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.
 
-let lowestCommonAncestor = function(root, p, q) {
+function lowestCommonAncestor(root, p, q) {
   if (root === null) return null;
   if (root === p || root === q) return root;
   const left = lowestCommonAncestor(root.left, p, q);
@@ -21,4 +21,4 @@ let lowestCommonAncestor = function(root, p, q) {
   if (!left) return right;
   if (!right) return left;
   return root;
-};
+}

@@ -20,7 +20,7 @@ function ListNode(val) {
  * @return {ListNode}
  */
 
-let addTwoNumbers = function(l1, l2) {
+function addTwoNumbers(l1, l2) {
   let newListHead = new ListNode(null);
   let current = newListHead;
   let carry = 0;
@@ -43,4 +43,4 @@ let addTwoNumbers = function(l1, l2) {
   }
   if (carry === 1) current.next = new ListNode(carry);
   return newListHead.next;
-};
+}

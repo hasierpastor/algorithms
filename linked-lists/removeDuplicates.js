@@ -21,7 +21,7 @@ function ListNode(val) {
  * @return {ListNode}
  */
 
-let deleteDuplicates = function(head) {
+function deleteDuplicates(head) {
   if (!head) return head;
   let current = head;
   while (current.next !== null) {
@@ -32,4 +32,4 @@ let deleteDuplicates = function(head) {
     }
   }
   return head;
-};
+}

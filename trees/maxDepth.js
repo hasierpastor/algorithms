@@ -27,7 +27,7 @@
  * @return {number}
  */
 
-let maxDepth = function(root) {
+function maxDepth(root) {
   if (!root) return 0;
   else if (!root.left && !root.right) return 1;
   else if (!root.left) return maxDepth(root.right) + 1;
@@ -35,4 +35,4 @@ let maxDepth = function(root) {
   else {
     return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
   }
-};
+}
