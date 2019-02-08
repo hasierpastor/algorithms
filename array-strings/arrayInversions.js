@@ -11,7 +11,7 @@
 
 // countInversions([4,3,2,1]) // 6 inversions: 4 and 3, 4 and 2, 4 and 1, 3 and 2, 3 and 1, 2 and 1
 
-function countInversions(array) {
+function arrayInversions(array) {
   var count = 0;
   for (var i = 0; i < array.length; i++) {
     for (var j = i + 1; j < array.length; j++) {
