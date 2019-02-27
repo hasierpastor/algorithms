@@ -33,5 +33,3 @@ function hasCycle(head) {
   }
   return false;
 }
-
-module.exports = LinkedList;
