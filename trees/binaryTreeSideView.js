@@ -10,6 +10,7 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
+
 function rightSideView(root) {
   if (!root) return [];
   let result = [];
