@@ -14,8 +14,6 @@
 // Explanation: One 1 at depth 1, one 4 at depth 2, and one 6 at depth 3; 1 + 4*2 + 6*3 = 27.
 
 /**
- * // This is the interface that allows for creating nested lists.
- * // You should not implement it, or speculate about its implementation
  * function NestedInteger() {
  *
  *     Return true if this NestedInteger holds a single integer, rather than a nested list.
@@ -51,6 +49,7 @@
  *     };
  * };
  */
+
 /**
  * @param {NestedInteger[]} nestedList
  * @return {number}
