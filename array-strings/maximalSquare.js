@@ -20,7 +20,7 @@ var maximalSquare = function(matrix) {
             }
           }
           for (let k = i; k <= sqlen + i; k++) {
-            if (matrix[k][j + sqlen] == '0') {
+            if (matrix[ ][j + sqlen] == '0') {
               flag = false;
               break;
             }
